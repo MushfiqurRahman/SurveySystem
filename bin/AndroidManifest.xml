@@ -5,14 +5,14 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="11"
         android:targetSdkVersion="18" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/Theme.AppCompat.Light" >
         <activity
             android:name="com.shaiun.surveysystem.MainActivity"
             android:label="@string/app_name" >
@@ -24,7 +24,8 @@
         </activity>
         <activity
             android:name="com.shaiun.surveysystem.SurveyActivity"
-            android:label="@string/title_activity_survey" >
+            android:label="@string/title_activity_survey"
+            android:theme="@style/Theme.AppCompat.Light"  >
         </activity>
     </application>
 
