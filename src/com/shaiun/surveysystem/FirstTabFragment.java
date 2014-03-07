@@ -14,7 +14,7 @@ public class FirstTabFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
  
-        return (LinearLayout) inflater.inflate(R.layout.tab1, container, false);
+        return (LinearLayout) inflater.inflate(R.layout.must_have_sku, container, false);
     }
  
 }

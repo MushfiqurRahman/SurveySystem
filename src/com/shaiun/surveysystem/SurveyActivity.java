@@ -10,7 +10,13 @@ import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
 
+/**
+ * @author mushfique
+ *
+ */
 public class SurveyActivity extends ActionBarActivity {
 
 	@Override
@@ -19,53 +25,45 @@ public class SurveyActivity extends ActionBarActivity {
 		ActionBar actionBar = getActionBar();
 		//ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
 		 
-        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-        android.app.ActionBar.Tab tab = actionBar.newTab();
-        tab.setText("First");
         
+        android.app.ActionBar.Tab tab = actionBar.newTab();
+        tab.setText("First");        
         TabListener<FirstTabFragment> tl = new TabListener<FirstTabFragment>(this,
                 "First Tab", FirstTabFragment.class);
-        tab.setTabListener(tl);
-        
+        tab.setTabListener(tl);        
         actionBar.addTab(tab);
         
         
         tab = actionBar.newTab();
-        tab.setText("First");
-        
+        tab.setText("First");        
         TabListener<FirstTabFragment> tl1 = new TabListener<FirstTabFragment>(this,
                 "First Tab", FirstTabFragment.class);
-        tab.setTabListener(tl);
-        
+        tab.setTabListener(tl);        
         actionBar.addTab(tab);
         
         tab = actionBar.newTab();
-        tab.setText("Second");
-        
+        tab.setText("Second");        
         TabListener<FirstTabFragment> tl2 = new TabListener<FirstTabFragment>(this,
                 "First Tab", FirstTabFragment.class);
         tab.setTabListener(tl);
         actionBar.addTab(tab);
         
         tab = actionBar.newTab();
-        tab.setText("Third");
-        
+        tab.setText("Third");        
         TabListener<FirstTabFragment> tl3 = new TabListener<FirstTabFragment>(this,
                 "First Tab", FirstTabFragment.class);
         tab.setTabListener(tl);
         actionBar.addTab(tab);
         
         tab = actionBar.newTab();
-        tab.setText("Fourth");
-        
+        tab.setText("Fourth");        
         TabListener<FirstTabFragment> tl4 = new TabListener<FirstTabFragment>(this,
                 "First Tab", FirstTabFragment.class);
         tab.setTabListener(tl);
         actionBar.addTab(tab);
         
         tab = actionBar.newTab();
-        tab.setText("Fifth");
-        
+        tab.setText("Fifth");        
         TabListener<FirstTabFragment> tl5 = new TabListener<FirstTabFragment>(this,
                 "First Tab", FirstTabFragment.class);
         tab.setTabListener(tl);
@@ -79,19 +77,18 @@ public class SurveyActivity extends ActionBarActivity {
         actionBar.addTab(tab);
         
         tab = actionBar.newTab();
-        tab.setText("Seventh");
+        tab.setText("Sixth");
         TabListener<FirstTabFragment> tl7 = new TabListener<FirstTabFragment>(this,
                 "First Tab", FirstTabFragment.class);
         tab.setTabListener(tl);
         actionBar.addTab(tab);
         
         tab = actionBar.newTab();
-        tab.setText("Eighth");
+        tab.setText("Sixth");
         TabListener<FirstTabFragment> tl8 = new TabListener<FirstTabFragment>(this,
                 "First Tab", FirstTabFragment.class);
         tab.setTabListener(tl);
         actionBar.addTab(tab);
-        
         
         tab = actionBar.newTab();
         tab.setText("Sixth");
@@ -99,20 +96,8 @@ public class SurveyActivity extends ActionBarActivity {
                 "First Tab", FirstTabFragment.class);
         tab.setTabListener(tl);
         actionBar.addTab(tab);
-        
-        tab = actionBar.newTab();
-        tab.setText("Seventh");
-        TabListener<FirstTabFragment> tl10 = new TabListener<FirstTabFragment>(this,
-                "First Tab", FirstTabFragment.class);
-        tab.setTabListener(tl);
-        actionBar.addTab(tab);
-        
-        tab = actionBar.newTab();
-        tab.setText("Eighth");
-        TabListener<FirstTabFragment> tl11 = new TabListener<FirstTabFragment>(this,
-                "First Tab", FirstTabFragment.class);
-        tab.setTabListener(tl);
-        actionBar.addTab(tab);
+                
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         
         setContentView(R.layout.activity_main);
 	}
@@ -123,6 +108,25 @@ public class SurveyActivity extends ActionBarActivity {
 	    MenuInflater inflater = getMenuInflater();
 	    inflater.inflate(R.menu.survey, menu);
 	    return super.onCreateOptionsMenu(menu);
+	}
+	
+	/**
+	 * Form validation should be fired from here
+	 */
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch( item.getItemId() ){
+			case R.id.action_back:
+				Toast.makeText(this, "Back button clicked", Toast.LENGTH_LONG).show();
+				return true;
+				
+			case R.id.action_forward:
+				Toast.makeText(this, "Forward button clicke", Toast.LENGTH_LONG).show();
+				return true;
+				
+			default:
+				return true;
+		}
 	}
 	
 	
