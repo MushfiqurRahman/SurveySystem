@@ -1,15 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/tab2"
+    android:id="@+id/unsuccessful_audit"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-    <TextView
-        android:id="@+id/textView1"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#888888"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unsuccessful audit" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:stretchColumns="2" >
+        
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            
+            <TextView 
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="N/A Reason"
+                android:background="@drawable/table_header"/>
+            
+            <TextView 
+                android:background="@drawable/table_header"
+                android:gravity="center"
+                android:text="N/A Code"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+
+            <CheckBox
+                android:id="@+id/checkBox1"                
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Duplicate Address - Already audited against the dealer code:" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10" >
+                
+            </EditText>            
+        </TableRow>
+        
+                <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+
+            <CheckBox
+                android:id="@+id/checkBox1"                
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Duplicate Address - Already audited against the dealer code:" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10" >
+                
+            </EditText>            
+        </TableRow>
+        
+                        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+
+            <CheckBox
+                android:id="@+id/checkBox1"                
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Duplicate Address - Already audited against the dealer code:" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10" >
+                
+            </EditText>            
+        </TableRow>
+        
+                                <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+
+            <CheckBox
+                android:id="@+id/checkBox1"                
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Duplicate Address - Already audited against the dealer code:" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ems="10" >
+                
+            </EditText>            
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Second Tab" />
+        android:onClick="onClick"
+        android:text="Button" />
 
 </LinearLayout>
