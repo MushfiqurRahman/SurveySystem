@@ -17,6 +17,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 /**
@@ -116,21 +119,15 @@ public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAud
 		    if (mFragment == null) {
 		        // If not, instantiate and add it to the activity
 		        mFragment = Fragment.instantiate(mActivity, mClass.getName());
+		        
+		        //mFragment.
+				
 		        ft.add(android.R.id.content, mFragment, mTag);
 		    } else {
 		        // If it exists, simply attach it in order to show it
 		        ft.attach(mFragment);
 		    }
-
-		    /*Button btnContinue = (Button)findViewById(R.id.btnContinue);
-		   	 btnContinue.setOnClickListener(new View.OnClickListener() {
-		   			
-		   			@Override
-		   			public void onClick(View v) {
-		   				nextFrag();
-		   				
-		   			}
-		   		});*/
+		    
 		    
 		}
 		
@@ -151,6 +148,7 @@ public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAud
     
     public void unsuccessfulAuditContinueClick(String msg){
     	show_alert_dialog("From Fragment",msg);
+    	getSupportActionBar().setSelectedNavigationItem(1);
     }
     
 	/**

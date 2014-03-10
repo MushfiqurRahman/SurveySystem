@@ -52,10 +52,14 @@ public class UnsuccessfulAuditFragment extends Fragment implements OnClickListen
 
     
     protected boolean isValidForm(){
-    	Log.i("Form validationnnnnnnnnnnn", "Into the isValidForm method");
+    	
+    	//CheckBox cb = (CheckBox)findViewById(R.id.checkBox1);
+    	/*Log.i("Form validationnnnnnnnnnnn", "Into the isValidForm method");
     	for (int i = 0; i < unsuccessfulAuditLayout.getChildCount(); i++) {
             View v = unsuccessfulAuditLayout.getChildAt(i);
             Class c = v.getClass();
+            
+            Log.i("nameeeeeeeeeeeeeeee",c.getName());
             
             //Toast.makeText(this, v., duration)
             
@@ -70,7 +74,9 @@ public class UnsuccessfulAuditFragment extends Fragment implements OnClickListen
             		//unsuccessfulAuditLis.unsuccessfulAuditContinueClick(cb.getId());
             	}
             }
-        }
+            
+            
+        }*/
         return true;
     }
 
