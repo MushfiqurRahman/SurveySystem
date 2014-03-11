@@ -176,12 +176,12 @@ public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAud
     }
     
     public void getNewProductData(){
-    	newProductModels.add(new NewProductModel("FAL Night Cream 25g", code, count));
-    	newProductModels.add(new NewProductModel("Ponds White Beauty Cream 25g Local, code, count));
+    	newProductModels.add(new NewProductModel("FAL Night Cream 25g", "404", 0));
+    	newProductModels.add(new NewProductModel("Ponds White Beauty Cream 25g Local, code, count", "407",0));
     }
     
     public void getTradePromotionData(){
-    	
+    	tradePromotionModels.add(new TradePromotionModel("Face Wash Borsho Boron Utshob 2014"));
     }
     
     public void unsuccessfulAuditContinueClick(String msg){

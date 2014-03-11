@@ -25,7 +25,8 @@ public class NewProductNTradePromotionFragment extends Fragment{
 	
 	//ArrayList<MustHaveSkuModel> mustHaveSkuData;
 	
-	MustHaveSkuModel mustSkuData = new MustHaveSkuModel("", "", 0);
+	NewProductModel newProductData = new NewProductModel("", "", 0);
+	TradePromotionModel tradePromotionData = new TradePromotionModel("");
 	
 //	MustHaveSkuListener mustHaveSkulis; 
 //	
@@ -48,17 +49,16 @@ public class NewProductNTradePromotionFragment extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		
-		View v = inflater.inflate(R.layout.must_have_sku, container, false);
+		View v = inflater.inflate(R.layout.new_product_n_trade_promotion, container, false);
 
-		TableLayout tl = (TableLayout)v.getRootView().findViewById(R.id.tbl_must_have_sku);
+		TableLayout tl = (TableLayout)v.getRootView().findViewById(R.id.tbl_new_product);
 		
 		SurveyActivity survActv = (SurveyActivity) getActivity();
 
-        for (int i = 0; i < survActv.mustHaveSkuModels.size(); i++) {            // Make TR
+        for (int i = 0; i < survActv.newProductModels.size(); i++) {            // Make TR
 		//for (int i = 0; i < 5; i++) {            // Make TR
         	
-        	mustSkuData = survActv.mustHaveSkuModels.get(i);
-        	
+        	newProductData = survActv.newProductModels.get(i);
         	
             TableRow tr = new TableRow(getActivity());
             tr.setId(100 + i);
@@ -68,14 +68,14 @@ public class NewProductNTradePromotionFragment extends Fragment{
             TextView detailstv = new TextView(getActivity());
             detailstv.setLayoutParams(new TableRow.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1f));
             detailstv.setId(200 + i);
-            detailstv.setText(mustSkuData.skuTitle);
+            detailstv.setText(newProductData.skuTitle);
             tr.addView(detailstv);
 
             // Make TV to hold the detailvals
 
             TextView valstv = new TextView(getActivity());
             valstv.setId(300 + i);
-            valstv.setText(mustSkuData.skuCode);
+            valstv.setText(newProductData.skuCode);
             tr.addView(valstv);
             
             EditText tb = new EditText(getActivity());
@@ -85,6 +85,9 @@ public class NewProductNTradePromotionFragment extends Fragment{
 
             tl.addView(tr, new TableLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
         }
+        
+        
+        
 		return v;
 	}
 	
