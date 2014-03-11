@@ -7,6 +7,7 @@
     <string name="unsuccessful_audit">Unsuccessful Audit</string>
     <string name="must_have_sku">Must Have SKU</string>
     <string name="new_product_n_trade_promotion">New Product n Trade Promo</string>
+    <string name="hot_spot_n_pop">Hot Spot n POP</string>
     
 
 </resources>

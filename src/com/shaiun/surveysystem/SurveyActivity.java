@@ -68,6 +68,14 @@ public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAud
         		tabLabel, NewProductNTradePromotionFragment.class);
         tab.setTabListener(tl_new_prod_n_trade_promo);        
         actionBar.addTab(tab);
+        
+        tabLabel = getResources().getString(R.string.hot_spot_n_pop);
+        tab = actionBar.newTab();
+        tab.setText(tabLabel);        
+        TabListener<HotSpotNPOPFragment> tl_hot_spot_n_pop = new TabListener<HotSpotNPOPFragment>(this,
+        		tabLabel, HotSpotNPOPFragment.class);
+        tab.setTabListener(tl_hot_spot_n_pop);        
+        actionBar.addTab(tab);
                 
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         

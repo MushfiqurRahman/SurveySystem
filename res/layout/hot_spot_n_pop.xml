@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hot_spot_n_pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/lin_lay_hot_spot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+	            <TextView
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="Part 5: HOT Spot" />
+	            
+	            <TextView
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="Q6. If yes, then circle Y; if no, then circle N." />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbl_hot_spot"
+                android:layout_marginBottom="30dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="Head"
+		               android:background="@drawable/table_header"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Description"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Compliance"/>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="Location"
+		               />
+		           
+		           <TextView 
+		               android:gravity="center"
+		               android:text="Near/In front of Entrance"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Compliance"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="Location"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Beside/Adjacent Cash Counter"/>
+		           
+		           <TextView
+		               android:gravity="center"
+		               android:text="Compliance"/>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="Height"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Eye Level of Consumers"/>
+		           
+		           <TextView
+		               android:gravity="center"
+		               android:text="Compliance"/>
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="Location"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Beside/Adjacent Cash Counter"/>
+		           
+		           <TextView
+		               android:gravity="center"
+		               android:text="Compliance"/>
+                </TableRow>
+                
+
+            </TableLayout>
+            
+            
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+	            <TextView
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="Part 6: Point of Purchase (POP) items" />
+	            <TextView
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="Q7. If the following POP Items are available, encircle Y. Otherwise encircle N." />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbl_pop_items" >
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+		           
+                    <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text=""/>
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="POP Items"
+		               android:background="@drawable/table_header"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Availability"/>
+		           
+		           
+                </TableRow>
+                
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="Height"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Eye Level of Consumers"/>
+		           
+		           <TextView
+		               android:gravity="center"
+		               android:text="Compliance"/>
+                </TableRow>
+
+            </TableLayout>
+            
+        </LinearLayout>
+        
+        
+    </ScrollView>
+    
+</LinearLayout>
+

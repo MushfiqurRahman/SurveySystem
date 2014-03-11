@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center" >
+    >
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -36,7 +36,8 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tbl_new_product" >
+                android:id="@+id/tbl_new_product"
+                android:layout_marginBottom="30dp" >
 
                 <TableRow
                     android:id="@+id/tableRow1"
