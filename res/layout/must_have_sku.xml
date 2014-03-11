@@ -6,5 +6,79 @@
     android:orientation="vertical"
     android:gravity="center" >
 
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                    
+                    <TextView
+			          android:layout_width="match_parent"
+			          android:layout_height="wrap_content"
+			          android:text="Must Have Sku" />
+                </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbl_must_have_sku" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="SKU"
+		               android:background="@drawable/table_header"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="SKU Code"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="SKU Count"/>
+                </TableRow>
+                
+                <TableRow
+                    android:id="@+id/tableRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="SKU"
+		               />
+		           
+		           <TextView 
+		               
+		               android:gravity="center"
+		               android:text="SKU Code"/>
+		           
+		           <TextView 
+		               
+		               android:gravity="center"
+		               android:text="SKU Count"/>
+                </TableRow>
+
+            </TableLayout>
+            
+        </LinearLayout>
+    </ScrollView>
     
 </LinearLayout>
