@@ -21,7 +21,7 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-public class HotSpotNPOPFragment extends Fragment{
+public class AdditionalInfoFragment extends Fragment{
 	
 	//ArrayList<MustHaveSkuModel> mustHaveSkuData;
 	
@@ -48,7 +48,7 @@ public class HotSpotNPOPFragment extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		
-		View v = inflater.inflate(R.layout.hot_spot_n_pop, container, false);
+		View v = inflater.inflate(R.layout.must_have_sku, container, false);
 
 /*		TableLayout tl = (TableLayout)v.getRootView().findViewById(R.id.tbl_must_have_sku);
 		
