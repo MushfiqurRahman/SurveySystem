@@ -21,7 +21,7 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-public class AdditionalInfoFragment extends Fragment{
+public class FixedDisplayFragment extends Fragment{
 	
 	//ArrayList<MustHaveSkuModel> mustHaveSkuData;
 	
@@ -48,7 +48,7 @@ public class AdditionalInfoFragment extends Fragment{
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		
-		View v = inflater.inflate(R.layout.additional_info, container, false);
+		View v = inflater.inflate(R.layout.fixed_display, container, false);
 
 /*		TableLayout tl = (TableLayout)v.getRootView().findViewById(R.id.tbl_must_have_sku);
 		
