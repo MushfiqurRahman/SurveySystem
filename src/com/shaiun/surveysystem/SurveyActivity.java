@@ -61,6 +61,14 @@ public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAud
         tab.setTabListener(tl_must_sku);        
         actionBar.addTab(tab);
         
+        tabLabel = getResources().getString(R.string.fixed_display);
+        tab = actionBar.newTab();
+        tab.setText(tabLabel);        
+        TabListener<FixedDisplayFragment> tl_fixed_display = new TabListener<FixedDisplayFragment>(this,
+        		tabLabel, FixedDisplayFragment.class);
+        tab.setTabListener(tl_fixed_display);        
+        actionBar.addTab(tab);
+        
         tabLabel = getResources().getString(R.string.new_product_n_trade_promotion);
         tab = actionBar.newTab();
         tab.setText(tabLabel);        
