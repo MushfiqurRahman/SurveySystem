@@ -1,5 +1,7 @@
 package com.shaiun.surveysystem;
 
+import java.util.ArrayList;
+
 import com.shaiun.surveysystem.UnsuccessfulAuditFragment.UnsuccessfulAuditListener;
 
 import android.os.Bundle;
@@ -27,10 +29,15 @@ import android.widget.Toast;
  *
  */
 public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAuditFragment.UnsuccessfulAuditListener {
+	
+	public ArrayList<MustHaveSkuModel> mustHaveSkuModels = new ArrayList<MustHaveSkuModel>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		getMustHaveSkuData();
+		
 		ActionBar actionBar = getActionBar();
 		//ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
 		 
@@ -145,6 +152,26 @@ public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAud
 		    // User selected the already selected tab. Usually do nothing.
 		}
 	}
+    
+    public void getMustHaveSkuData(){
+    
+
+    	//for(int i=0; i<5; i++){
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Wheel Laundry Soap 130g", "880", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Wheel washing powder 500g", "881", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Wheel washing powder 200g", "882", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Rin power white 450g", "883", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Rin power white 180g", "884", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Rin power white 25g", "885", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Surf excel 20g", "886", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Close Up 50g", "886", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Pepsodent ToothPowder 100g", "887", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Pepsodent ToothPowder 50g", "888", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Pepsodent 45g", "889", 0));
+    		mustHaveSkuModels.add(new MustHaveSkuModel("Pepsodent 14g", "900", 0));
+    	//}
+    	//return getMustHaveSkuData();
+    }
     
     public void unsuccessfulAuditContinueClick(String msg){
     	show_alert_dialog("From Fragment",msg);
