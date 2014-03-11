@@ -75,15 +75,7 @@
                 android:id="@+id/checkBox1"                
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Duplicate Address - Already audited against the dealer code:" />
-
-            <EditText
-                android:id="@+id/editText1"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-                android:ems="10" >
-                
-            </EditText>            
+                android:text="Incomplete Address / Could not locate the outlet" />            
         </TableRow>
         
                         <TableRow
@@ -97,15 +89,7 @@
                 android:id="@+id/checkBox1"                
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Duplicate Address - Already audited against the dealer code:" />
-
-            <EditText
-                android:id="@+id/editText1"
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-                android:ems="10" >
-                
-            </EditText>            
+                android:text="Temporary Closed" />            
         </TableRow>
         
                                 <TableRow
@@ -119,7 +103,66 @@
                 android:id="@+id/checkBox1"                
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Duplicate Address - Already audited against the dealer code:" />
+                android:text="Permanently Closed: Mention the Month" />
+
+            
+        </TableRow>
+        
+                                
+                                                                <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+
+            <CheckBox
+                android:id="@+id/checkBox1"                
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Not covered due to restricted area" />            
+        </TableRow>
+        
+                                                                                                <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+
+            <CheckBox
+                android:id="@+id/checkBox1"                
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Not covered due to productivity reason" />            
+        </TableRow>
+        
+                                                                                                                                <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+
+            <CheckBox
+                android:id="@+id/checkBox1"                
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Refusal by retailer" />            
+        </TableRow>
+        
+                                                                                                                                                                <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+
+            <CheckBox
+                android:id="@+id/checkBox1"                
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Business change: Mention new business" />
 
             <EditText
                 android:id="@+id/editText1"

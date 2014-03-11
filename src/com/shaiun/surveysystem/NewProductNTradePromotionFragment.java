@@ -16,7 +16,9 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RadioGroup;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -86,6 +88,36 @@ public class NewProductNTradePromotionFragment extends Fragment{
             tl.addView(tr, new TableLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
         }
         
+        tl = (TableLayout)v.getRootView().findViewById(R.id.tbl_trade_promotion);
+        for (int i = 0; i < survActv.tradePromotionModels.size(); i++) {            // Make TR
+		//for (int i = 0; i < 5; i++) {            // Make TR
+        	
+        	tradePromotionData = survActv.tradePromotionModels.get(i);
+        	
+            TableRow tr = new TableRow(getActivity());
+            tr.setId(100 + i);
+            //tr.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+
+            // Make TV to hold the details
+            TextView detailstv = new TextView(getActivity());
+            detailstv.setLayoutParams(new TableRow.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1f));
+            detailstv.setId(200 + i);
+            detailstv.setText(tradePromotionData.skuTitle);
+            tr.addView(detailstv);
+
+            // Make TV to hold the detailvals
+
+/*            Spinner spnYesNo = new TextView(getActivity());
+            valstv.setId(300 + i);
+            valstv.setText(newProductData.skuCode);
+            tr.addView(valstv);
+*/            
+            
+            
+            
+
+            tl.addView(tr, new TableLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
+        }
         
         
 		return v;

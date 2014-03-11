@@ -82,7 +82,7 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tbl_new_product" >
+                android:id="@+id/tbl_trade_promotion" >
 
                 <TableRow
                     android:id="@+id/tableRow1"
