@@ -31,6 +31,8 @@ import android.widget.Toast;
 public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAuditFragment.UnsuccessfulAuditListener {
 	
 	public ArrayList<MustHaveSkuModel> mustHaveSkuModels = new ArrayList<MustHaveSkuModel>();
+	public ArrayList<NewProductModel> newProductModels = new ArrayList<NewProductModel>();
+	public ArrayList<TradePromotionModel> tradePromotionModels = new ArrayList<TradePromotionModel>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -171,6 +173,15 @@ public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAud
     		mustHaveSkuModels.add(new MustHaveSkuModel("Pepsodent 14g", "900", 0));
     	//}
     	//return getMustHaveSkuData();
+    }
+    
+    public void getNewProductData(){
+    	newProductModels.add(new NewProductModel("FAL Night Cream 25g", code, count));
+    	newProductModels.add(new NewProductModel("Ponds White Beauty Cream 25g Local, code, count));
+    }
+    
+    public void getTradePromotionData(){
+    	
     }
     
     public void unsuccessfulAuditContinueClick(String msg){

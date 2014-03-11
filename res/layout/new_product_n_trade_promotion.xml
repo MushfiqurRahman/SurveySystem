@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_product_n_trade_promotion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+	            <TextView
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="Part 3: New Product" />
+	            
+	            <TextView
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="Q4. Please count and record the Unilever SKU below" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbl_new_product" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="SKU"
+		               android:background="@drawable/table_header"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="SKU Code"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="SKU Count"/>
+                </TableRow>
+
+            </TableLayout>
+            
+            
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+	            <TextView
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="Part 4: Trade Promotion" />
+	            <TextView
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="Q5. If yes, encircle Y; if no, encircle N." />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbl_new_product" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                    
+                    <TextView 
+		               android:layout_weight="1"
+		               android:gravity="center"
+		               android:text="Program Name"
+		               android:background="@drawable/table_header"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Availability of Trade Brochure"/>
+		           
+		           <TextView 
+		               android:background="@drawable/table_header"
+		               android:gravity="center"
+		               android:text="Trade Brochure Update"/>
+                </TableRow>
+
+            </TableLayout>
+            
+        </LinearLayout>
+        
+        
+    </ScrollView>
+    
+</LinearLayout>
+
