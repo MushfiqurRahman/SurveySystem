@@ -22,15 +22,24 @@
                     android:orientation="vertical" >
                     
                     <TextView
-			          android:layout_width="match_parent"
-			          android:layout_height="wrap_content"
-			          android:text="Must Have Sku" />
+		          android:layout_width="match_parent"
+		          android:layout_height="wrap_content"
+		          android:text="Part 2: Fixed Display - Plan-o-gram and Quantity" />
+	            
+                </LinearLayout>
+                
+                <LinearLayout 
+                    android:id="@+id/lay_fixed_display_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    
                 </LinearLayout>
 
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tbl_must_have_sku" >
+                android:id="@+id/tbl_fixed_display" >
 
                 <TableRow
                     android:id="@+id/tableRow1"

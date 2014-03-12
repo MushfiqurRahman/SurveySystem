@@ -28,7 +28,8 @@ import android.widget.Toast;
  * @author mushfique
  *
  */
-public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAuditFragment.UnsuccessfulAuditListener {
+public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAuditFragment.UnsuccessfulAuditListener,
+MustHaveSkuFragment.MustHaveSkuListener{
 	
 	public ArrayList<MustHaveSkuModel> mustHaveSkuModels = new ArrayList<MustHaveSkuModel>();
 	public ArrayList<NewProductModel> newProductModels = new ArrayList<NewProductModel>();
@@ -207,6 +208,13 @@ public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAud
     	//return getMustHaveSkuData();
     }
     
+    @Override
+	public void sumittedMustHaveSku(String qty) {
+		show_alert_dialog("Must sku", qty);
+		
+	}
+    
+    
     public void getNewProductData(){
     	newProductModels.add(new NewProductModel("FAL Night Cream 25g", "404", 0));
     	newProductModels.add(new NewProductModel("Ponds White Beauty Cream 25g Local, code, count", "407",0));
@@ -241,4 +249,8 @@ public class SurveyActivity extends ActionBarActivity implements UnsuccessfulAud
 		});
         alertDialog.show();
 	}
+
+
+
+	
 }
